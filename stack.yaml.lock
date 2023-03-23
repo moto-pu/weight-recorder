@@ -12,15 +12,43 @@ packages:
   original:
     hackage: HDBC-sqlite3-2.3.3.1
 - completed:
-    hackage: product-isomorphic-0.0.3.3@sha256:6a164d34fda7a0ff88a7a23949dd7ac4354d46eaeafa2e08573fc7d067e5edab,2450
+    hackage: reroute-0.6.0.0@sha256:43805b3fdc7ed1ba701cd10e249abc997b2291c8f374b8333bb2ea0e0d1dad0b,2382
     pantry-tree:
-      size: 905
-      sha256: e63c282f8d89b12696bf6e8d3373d1f146833c2aec8a7528e2462c3f632e44a2
+      size: 660
+      sha256: 0a27afabb1730147d6aa0ddf5cc6368951c4625e3706cb8f5388da9739372fa3
   original:
-    hackage: product-isomorphic-0.0.3.3
+    hackage: reroute-0.6.0.0
+- completed:
+    hackage: Spock-0.14.0.0@sha256:7e86ccc9e66ce0fdb84d1dcd328f852d3754c2dbfcb60d0e7e2f1cce2f32f177,3681
+    pantry-tree:
+      size: 1118
+      sha256: 6829dae9ba2492fae3e447afe13013dd863bd48fd5b8addfa74fc55d979de7b2
+  original:
+    hackage: Spock-0.14.0.0
+- completed:
+    hackage: Spock-core-0.14.0.0@sha256:c8f0d5c0cf2e835fcc9148c4310c9b675c0354646bfa9b2088bb30d9e70012bd,3572
+    pantry-tree:
+      size: 1113
+      sha256: 33115a101b98e4b29bc273c029f5fb514a354b65344e3aa401456a77c7610905
+  original:
+    hackage: Spock-core-0.14.0.0
+- completed:
+    hackage: stm-containers-1.2@sha256:a887f2e7692b7cf20e0b081e2d66e21076e2bd4b57016ec59c484edfa2d29397,3244
+    pantry-tree:
+      size: 761
+      sha256: 20b1076bdb121347ccc512a67df697eed34815a8e35279b6b9a0951963b1eba2
+  original:
+    hackage: stm-containers-1.2
+- completed:
+    hackage: stm-hamt-1.2.0.6@sha256:fba86ccb4b45c5706c19b0e1315ba63dcac3b5d71de945ec001ba921fae80061,3972
+    pantry-tree:
+      size: 1009
+      sha256: 1920790535af832b76e7583c33ecf51f8b0b0c3615ef1db1c8ed9be19622c1db
+  original:
+    hackage: stm-hamt-1.2.0.6
 snapshots:
 - completed:
-    size: 518016
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/8/24.yaml
-    sha256: 58d166ffca17aba53a052fb1e2e1dd1563752d039e30f4d135d7e1cbe3e870cc
-  original: lts-8.24
+    size: 586120
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/22.yaml
+    sha256: f9970d6f25c63e3e4265aa8e9c69a047ba8919d1107e4996bdd7555b75aad0eb
+  original: lts-18.22

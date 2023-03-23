@@ -32,15 +32,17 @@ import           GHC.Generics              (Generic)
 import           System.IO                 (hPrint, hPutStrLn, stderr)
 
 data NewUser = NewUser
-  { nuName :: !String
-  , nuPassword  :: !String
-  }
+  { nuName     :: !String
+  , nuPassword :: !String
+  } deriving (Generic)
 
-makeRecordPersistableDefault ''NewUser
+makeRelationalRecord ''NewUser
 
+-- 射影を定義。
 piNewUser :: HRR.Pi User.User NewUser
-piNewUser = NewUser HRR.|$| User.name' HRR.|*| Usr.nuPassword'
+piNewUser = NewUser DFP.|$| User.name' DFP.|*| User.password'
 
+-- src/Model/User.hsに追記。
 -- 第一引数で新ユーザ、第二引数で接続を指定。
 insertUser
   :: IConnection c
@@ -77,6 +79,7 @@ enc = encodeUtf8 . pack
 dec :: BS.ByteString -> String
 dec = unpack . decodeUtf8
 
+-- src/Model/User.hsに追記。
 -- 第一引数にユーザ名、第二引数にパスワード、第三引数に接続を指定。
 selectUser
   :: IConnection c
